@@ -14,3 +14,4 @@ function myName(first, last) {
 }
 
 // 함수 표현식을 작성하고 테스트 하시오. 호이스팅 되는가?
+var myName = (first, last) = > console.log(first+last)
