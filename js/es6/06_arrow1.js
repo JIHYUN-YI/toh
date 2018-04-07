@@ -4,6 +4,7 @@ let circleArea = function(pi, r) {
 };
 
 // 위의 문장을 한줄로 작성하시오.
+let circleArea = (pi, r) => pi * r * r;
 
 let result = circleArea(3.14, 3);
 
