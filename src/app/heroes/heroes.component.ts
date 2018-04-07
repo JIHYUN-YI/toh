@@ -7,12 +7,19 @@ import {Hero} from '../hero';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
+  // literal object
+  /*hero: Hero = {
     id: 1,
     name: 'Windstorm'
-  };
+  };*/
 
-  constructor() { }
+  // using 'new' keyword (생성자 함수)
+  hero = new Hero();
+
+  constructor() {
+    this.hero.id = 1;
+    this.hero.name = 'Windstorm';
+  }
 
   ngOnInit() {
   }
